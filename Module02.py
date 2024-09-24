@@ -180,4 +180,4 @@ def print_lines(length, pen):
     print(pen * length)
 
 
-print_lines(10, 'pp')
+print_lines(10, '-')
