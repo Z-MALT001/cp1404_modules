@@ -186,14 +186,14 @@ Module 2
 
 from random import randint
 
-get_high_number = int(input("Enter a number: "))
-get_low_number = int(input("Enter a lower number: "))
+high_number = int(input("Enter a number: "))
+low_number = int(input("Enter a lower number: "))
 
-while get_high_number < get_low_number:
+while high_number < low_number:
     print("Please ensure the second number is LOWER than the first number.")
-    get_high_number = int(input("Enter a number: "))
-    get_low_number = int(input("Enter a lower number: "))
+    high_number = int(input("Enter a number: "))
+    low_number = int(input("Enter a lower number: "))
 
-rand_number = randint(get_low_number, get_high_number)
+rand_number = randint(low_number, high_number)
 
 print(rand_number * ":)")
