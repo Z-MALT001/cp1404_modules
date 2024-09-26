@@ -197,3 +197,13 @@ while high_number < low_number:
 rand_number = randint(low_number, high_number)
 
 print(rand_number * ":)")
+
+
+# Slack Rewrite
+
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
