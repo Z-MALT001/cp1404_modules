@@ -2,7 +2,6 @@
 Module 2
 """
 
-
 # Random Import
 
 
@@ -61,7 +60,7 @@ Module 2
 #
 # def calculate_bmi(height, weight):
 #     return weight / (height ** 2)
-#
+
 #
 # main()
 
@@ -175,9 +174,26 @@ Module 2
 # Parameters
 
 # def print_lines(length: int , pen: str): # Used to specify data type
-def print_lines(length, pen):
-    """Print a line of length pen characters"""
-    print(pen * length)
+# def print_lines(length, pen):
+#     """Print a line of length pen characters"""
+#     print(pen * length)
+#
+#
+# print_lines(10, '-')
 
 
-print_lines(10, '-')
+# Week 2 Lecture Questions
+
+from random import randint
+
+get_high_number = int(input("Enter a number: "))
+get_low_number = int(input("Enter a lower number: "))
+
+while get_high_number < get_low_number:
+    print("Please ensure the second number is LOWER than the first number.")
+    get_high_number = int(input("Enter a number: "))
+    get_low_number = int(input("Enter a lower number: "))
+
+rand_number = randint(get_low_number, get_high_number)
+
+print(rand_number * ":)")
